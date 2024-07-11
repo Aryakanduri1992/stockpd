@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+#stockSymbol {
+    padding: 10px;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#predictButton {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#predictButton:hover {
+    background-color: #218838;
+}
+
+.loading {
+    display: none;
+    margin-top: 20px;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+#viewToggle {
+    margin-top: 20px;
+}
+
+#toggleViewButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggleViewButton:hover {
+    background-color: #0056b3;
+}
+
+#chartView {
+    margin-top: 20px;
+}
+
+#tableView {
+    margin-top: 20px;
+}
+
+#priceTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#priceTable th, #priceTable td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#priceTable th {
+    background-color: #f2f2f2;
+}
+
+.error {
+    color: red;
+    margin-top: 20px;
+    display: none;
+}
+
+#backButtonContainer {
+    margin-top: 20px;
+}
+
+#backButton {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backButton:hover {
+    background-color: darkred;
+}

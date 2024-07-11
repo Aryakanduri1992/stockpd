@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Price Prediction</h1>
+        <div class="form-group">
+            <input type="text" id="stockSymbol" placeholder="Enter Stock Symbol">
+            <button id="predictButton">Predict</button>
+        </div>
+        <div class="loading" id="loading">Loading...</div>
+        <div class="error" id="error"></div>
+        <div id="viewToggle" style="display: none;">
+            <button id="toggleViewButton">Switch to Table View</button>
+        </div>
+        <div id="chartView" style="display: none;">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div id="tableView" style="display: none;">
+            <table id="priceTable">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+        <div id="backButtonContainer" style="display: none;">
+            <button id="backButton">Back</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
